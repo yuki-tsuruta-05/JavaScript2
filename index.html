@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+      <link rel="stylesheet" href="main.css">
+      <title>電卓</title>
+    </head>
+   
+    <body>
+      
+      <div class="calculator">
+        <table>
+          <!--計算結果表示画面-->
+          <tr>
+            <td　colspan="5">
+              <input type="text" id="result"  name="result" disabl value="0">
+            </td>
+          </tr>
+                  <!--１行目-->
+          <tr>
+            <td><input class="all-button num-btn" type="button" value="7" onclick="numClickBtn(7)"></td>
+            <td><input class="all-button num-btn" type="button" value="8" onclick="numClickBtn(8)"></td>
+            <td><input class="all-button num-btn" type="button" value="9" onclick="numClickBtn(9)"></td>
+            <td colspan="2"><input class="all-button btn" type="button" value="AC" onclick="clickACBtn('AC')"></td>
+            
+          </tr>        
+  
+          <!--２行目-->
+          <tr>
+            <td><input class="all-button num-btn" type="button" value="4" onclick="numClickBtn(4)"></td>
+            <td><input class="all-button num-btn" type="button" value="5" onclick="numClickBtn(5)"></td>
+            <td><input class="all-button num-btn" type="button" value="6" onclick="numClickBtn(6)"></td>
+            <td><input class="all-button operate-btn" type="button" value="+" onclick="opeClickBtn('+')"></td>
+            <td><input class="all-button operate-btn" type="button" value="-" onclick="opeClickBtn('-')"></td>
+  
+          </tr>
+          
+          <!--３行目-->
+          <tr>
+            <td><input class="all-button num-btn" type="button" value="1" onclick="numClickBtn(1)"></td>
+            <td><input class="all-button num-btn" type="button" value="2" onclick="numClickBtn(2)"></td>
+            <td><input class="all-button num-btn" type="button" value="3" onclick="numClickBtn(3)"></td>
+            <td><input class="all-button operate-btn" type="button" value="*" onclick="opeClickBtn('*')"></td>
+            <td><input class="all-button operate-btn" type="button" value="/" onclick="opeClickBtn('/')"></td>
+  
+          </tr>
+          
+          <!--４行目-->
+          <tr>
+            <td colspan="2"><input class="all-button zero-btn" type="button" value="0" onclick="numClickBtn(0)"></td>
+            <td><input class="all-button point-btn" type="button" value="." onclick="pointClickBtn('.')"></td>
+            <td colspan="2"><input class="all-button equal-btn" type="button" value="=" onclick="equalClickBtn('=')"></td>
+          </tr>
+        </table>
+　　　</div>
+        
+      <script src="main.js"></script>
+    </body>
+　</html>
